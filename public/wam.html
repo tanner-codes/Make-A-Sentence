@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who am I</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="nav-toggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav class="sidenav">
+    <div class="sidenav-header">
+      <h3>Hello!</h3>
+      <span class="close-btn">&times;</span>
+    </div>
+    <br>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="about.html">About.</a></li>
+      <li><a href="#">Support Me!</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Who Am I?</h1>
+    <div class="who-am-i-container">
+      <div class="who-am-i-item">
+        <h3>I'm a web developer!</h3>
+        <p>I know many languages including HTML, css, js, py and C!</p>
+      </div>
+      <div class="who-am-i-item">
+        <h3>About myself.</h3>
+        <p>I am 15yo, and I go by the online name tanner.codes!</p>
+      </div>
+      <div class="who-am-i-item">
+        <h3>My other projects</h3>
+        <p><a style="text-decoration: none; color: blue" href="https://github.com" target="_blank">My github</a>, <a style="text-decoration: none; color: blue" href="https://codepen.io/tannercodes" target="_blank">My CodePen</a>, and <a style="text-decoration: none; color: blue" href="https://www.instagram.com/tanner.codes" target="_blank">My Instagram!</a></p>
+      </div>
+      <div class="who-am-i-item">
+        <h3>My Goal.</h3>
+        <p>My goal is to make something uniqe, fun, and interactive!</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const sideNav = document.querySelector('.sidenav');
+    const closeBtn = document.querySelector('.close-btn');
+
+    navToggle.addEventListener('click', toggleSideNav);
+    closeBtn.addEventListener('click', toggleSideNav);
+
+    function toggleSideNav() {
+      sideNav.classList.toggle('open');
+      container.classList.toggle('nav-open');
+    }
+  </script>
+</body>
+</html>
